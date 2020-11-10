@@ -3,22 +3,25 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>tomcharliedesign UI/UX Portfolio</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <a href="index.html">
-        <img src="img/Extended.svg" <img src="img/Extended.svg" alt="tomcharliedesign Logo">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/Extended.svg" alt="tomcharliedesign Logo">
       </a>
       <nav>
-        <ul>
+        <ul class="list">
           <li><a href="index.html" class="nav-button">Home</a></li>
           <li><a href="about.html" class="nav-button">About</a></li>
           <li><a href="#contact" class="nav-button">Contact</a></li>
@@ -30,8 +33,7 @@
   <main>
     <!-- For the hero section -->
     <div id="intro">
-      <div>
-        <div></div>
+      <div class="container">
         <h1>Hello, I’m Tom and I’m a <span>User Interface Designer</span> based between Amsterdam and London.</h1>
         <p>I’m a UI designer with a background in account management in tech start-ups. I have experience solving user problems in fast paced environments and creating niche solutions for users in budget constrained environments. This led me to
           look at the products I worked with in great detail and inspired me to create functional and simple design that supports the product rather than gets in the way of it. I now create intuitive and clean designs that serve the product and
@@ -41,9 +43,9 @@
 
     <!-- For your work/projects -->
     <div div id="work">
-      <div>
+      <div class="container">
         <h2>My work</h2>
-        <div>
+        <div class="row">
           <div>
             <picture>
               <source srcset="img/index/Dinhero-cover@1x.png" media="(max-width:767px)">
@@ -56,7 +58,7 @@
             <a href="Dinhero.html" class="button">Take a look</a>
           </div>
         </div>
-        <div>
+        <div class="row">
           <div>
             <picture>
               <source srcset="img/index/Groundgame-cover@1x.png" media="(max-width:767px)">
@@ -77,18 +79,27 @@
 
   <!-- For the footer  -->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Let’s Work Together</h2>
       <p>I am currently open to work opportunities and can start immediately, whether that be a full-time role or contract work. I specialise in mobile app design but I also do websites too and am always open to new challenges beyond that.
       <p>Services I can help you with:</p>
       <p>UI/UX design. Iconography. Branding. Logo design. Illustration.</p>
       <p>Get in touch to discuss your project and hear how I can help.</p>
-      <div><a href="mailto:tomcharliedesign@gmail.com?subject=Lets%20work%20together&body=Hi%20Tom," class="button contact">Email me</a></div>
-      <div><a href="https://www.instagram.com/tomcharliedesign/" class="button contact" target="_blank">Instagram</a></div>
-      <div><a href="https://dribbble.com/tomcharliedesign" class="button contact" target="_blank">Dribbble</a></div>
-      <div><a href="https://www.linkedin.com/in/tom-hopcroft-026530154/" class="button contact" target="_blank">LinkedIn</a></div>
+      <div class='row'><a href="mailto:tomcharliedesign@gmail.com?subject=Lets%20work%20together&body=Hi%20Tom," class="button contact">Email me</a></div>
+      <p>Or if you prefer, pick up the phone and give me a call: <a href=" tel:+447495030209">+44 7495 030 209</a></p>
+      <div class="link-to-social">
+        <a href="https://www.instagram.com/tomcharliedesign/">
+          <img src="img/instagram-seeklogo.com.svg" alt="Instagram Logo">
+        </a>
+        <a href="https://dribbble.com/tomcharliedesign">
+          <img src="img/dribbble-ball-mark-seeklogo.com.svg" alt="Dribbble Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/tom-hopcroft-026530154/">
+          <img src="img/linkedin.svg" alt="Linkedin Logo">
+        </a>
+
+      </div>
     </div>
-    <p>Or if you prefer, pick up the phone and give me a call: <a href=" tel:+447495030209">+44 7495 030 209</a></p>
     <p>Copyright Tom Hopcroft 2020</p>
     </div>
   </footer>
