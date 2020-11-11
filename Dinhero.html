@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<<head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,16 +12,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="dinhero">
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <a href="index.html">
-        <img src="img/Extended.svg" <img src="img/Extended.svg" alt="tomcharliedesign Logo">
-      </a>
+    <div class="container">
+        <a href="index.html" class="logo">
+          <img src="img/Extended.svg" alt="tomcharliedesign Logo">
+        </a>
       <nav>
-        <ul>
+        <ul class="list">
           <li><a href="index.html" class="nav-button">Home</a></li>
           <li><a href="about.html" class="nav-button">About</a></li>
           <li><a href="#contact" class="nav-button">Contact</a></li>
@@ -30,11 +30,11 @@
     </div>
   </header>
 
-  <main>
-    <div div id="dinhero-intro">
+  <main class="container">
+    <div class="intro">
       <div>
         <h1>Dinero</h1>
-        <picture>
+        <picture class=blueback>
           <source srcset="img/Dinhero/dinhero-title@x1.png" media="(max-width:767px)">
           <img src="img/Dinhero/dinhero-title@2x.png" alt="Title image">
         </picture>
@@ -46,7 +46,7 @@
     </div>
 
 
-    <div id="dinhero-about">
+    <div class="about">
       <div>
         <h2>About</h2>
         <p>Dinhero is a motivational money-saving app. By making savings funds, or Jars, dedicated to their specific goals, and setting their own time deadlines, users can easily see their progression over time.</p>
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <div id="dinhero-project">
+    <div class="project">
       <div>
         <h2>Project</h2>
         <p>This was the final project for the CareerFoundry intensive UX/UI Immersion course. For this project I was given a design brief requiring me to build a trustworthy money-saving tool that users can use to save money quickly for a
@@ -63,7 +63,7 @@
       </div>
     </div>
 
-    <div id="dinhero-my-role">
+    <div class="my-role">
       <div>
         <h2>My role</h2>
         <p>My role in this project was complete ownership of UX and UI from start to finish.</p>
@@ -79,7 +79,7 @@
     </div>
 
 
-    <div id="dinhero-user-stories">
+    <div class="user-stories">
       <div>
         <h2>User stories</h2>
         <p>Based on the design brief, I crafted three user stories to represent the user in the basic functions needed to use the app.</p>
@@ -99,7 +99,7 @@
     </div>
 
 
-    <div id="dinhero-user-flow">
+    <div class="user-flow">
       <div>
         <h2>User flow diagram</h2>
         <p>For each user story, I mapped out the general flow of screens the user would need to pass through to complete their goals. I was careful to not add unnecessary steps to the process and keep the flow as concise as possible to ensure an
@@ -112,9 +112,9 @@
     </div>
 
 
-    <div id="dinhero-wireframes">
+    <div class="wireframes">
       <div>
-        <h3>Wireframes</h3>
+        <h2>Wireframes</h2>
         <p>With the user flow diagram guiding what screens were needed, I created the low-fidelity wireframes with the basic and essential UI elements the user would need to navigate the app.</p>
 
         <p>Once the basic elements were established, the mid-fidelity wireframes could be created, fleshing out more of the UI elements. In this stage the design started to take shape, more screens were added that were not additionally considered
@@ -131,18 +131,18 @@
     </div>
 
 
-    <div id="dinhero-prototype">
+    <div class="prototype">
       <div>
-        <h3>Prototype</h3>
+        <h2>Prototype</h2>
         <p>After touching up my wireframes into a more complete representation of the final product, I used the screens to make a prototype using InVision in order to conduct a user testing.</p>
         <a href="https://projects.invisionapp.com/share/KNYYE22REXS#/screens" class="button" target="_blank">Use prototype</a>
       </div>
     </div>
 
 
-    <div id="dinhero-user-test">
+    <div class="user-test">
       <div>
-        <h3>User testing</h3>
+        <h2>User testing</h2>
         <p>Nine participants were gathered to test the main three functions of the app. They were each given the same three separate tasks to complete and were monitored throughout the session as they interacted with the interface to spot for any
           particular pain points.
 
@@ -158,9 +158,9 @@
     </div>
 
 
-    <div id="dinhero-results">
+    <div class="results">
       <div>
-        <h3>Results</h3>
+        <h2>Results</h2>
         <picture>
           <source srcset="img/Dinhero/user-testing-table@1x.png" media="(max-width:767px)">
           <img src="img/Dinhero/user-testing-table@2x.png" alt="Low-fi wireframes">
@@ -169,19 +169,19 @@
     </div>
 
 
-    <div id="dinhero-learnings">
+    <div class="learnings">
       <div>
-        <h3>Key learnings</h3>
+        <h2>Key learnings</h2>
         <div>
-          <h4>White space</h4>
+          <h3>White space</h3>
           <p>Over 60% of participants commented that the original dashboard was too busy. Resizing fonts and graphics made for a design that was easier on the eye, and drew the user’s attention to the information they need.</p>
         </div>
         <div>
-          <h4>Between the lines</h4>
+          <h3>Between the lines</h3>
           <p>Three of the participants commented that the statement screen was harsh to look at. I increased spacing, changed the body copy to a lighter grey and added green text to differentiate between saving and spending.</p>
         </div>
         <div>
-          <h4>Right direction</h4>
+          <h3>Right direction</h3>
           <p>80% of participants commented that the button labels were not specific enough, resulting in ending up on a screen that they did not expect. This was an easy fix and just a case of changing the copy of the button labels.</p>
         </div>
         <div>Once the key learnings were gathered, I went back to make amendments to the screens to ensure the best experience for the user from start to end. The final product is a user-friendly mobile savings app, optimised to motivate the user
@@ -192,8 +192,8 @@
     </div>
 
 
-    <div id="dinhero-hifi-screens">
-      <div>
+    <div class="hifi-screens">
+      <div class="greenback">
         <picture>
           <source srcset="img/Dinhero/multiphone-mockup@1x.png" media="(max-width:767px)">
           <img src="img/Dinhero/multiphone-mockup@2x.png" alt="Multiphone mockup">
@@ -238,21 +238,31 @@
 
   <!-- For the footer  -->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Let’s Work Together</h2>
       <p>I am currently open to work opportunities and can start immediately, whether that be a full-time role or contract work. I specialise in mobile app design but I also do websites too and am always open to new challenges beyond that.
       <p>Services I can help you with:</p>
       <p>UI/UX design. Iconography. Branding. Logo design. Illustration.</p>
       <p>Get in touch to discuss your project and hear how I can help.</p>
-      <div><a href="mailto:tomcharliedesign@gmail.com?subject=Lets%20work%20together&body=Hi%20Tom," class="button contact">Email me</a></div>
-      <div><a href="https://www.instagram.com/tomcharliedesign/" class="button contact" target="_blank">Instagram</a></div>
-      <div><a href="https://dribbble.com/tomcharliedesign" class="button contact" target="_blank">Dribbble</a></div>
-      <div><a href="https://www.linkedin.com/in/tom-hopcroft-026530154/" class="button contact" target="_blank">LinkedIn</a></div>
+      <div class='row'><a href="mailto:tomcharliedesign@gmail.com?subject=Lets%20work%20together&body=Hi%20Tom," class="button contact">Email me</a></div>
+      <p>Or if you prefer, pick up the phone and give me a call: <a href=" tel:+447495030209">+44 7495 030 209</a></p>
+      <div class="link-to-social">
+        <a href="https://www.instagram.com/tomcharliedesign/">
+          <img src="img/instagram-seeklogo.com.svg" alt="Instagram Logo">
+        </a>
+        <a href="https://dribbble.com/tomcharliedesign">
+          <img src="img/dribbble-ball-mark-seeklogo.com.svg" alt="Dribbble Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/tom-hopcroft-026530154/">
+          <img src="img/linkedin.svg" alt="Linkedin Logo">
+        </a>
+
+      </div>
     </div>
-    <p>Or if you prefer, pick up the phone and give me a call: <a href=" tel:+447495030209">+44 7495 030 209</a></p>
     <p>Copyright Tom Hopcroft 2020</p>
     </div>
   </footer>
+
 </body>
 
 </html>
