@@ -16,15 +16,15 @@
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <a href="index.html">
+    <div class="container">
+      <a href="index.html" class="logo">
         <img src="img/Extended.svg" alt="tomcharliedesign Logo">
       </a>
       <nav>
-        <ul>
-          <li><a href="index.html" class= "nav-button">Home</a></li>
-          <li><a href="about.html" class= "nav-button">About</a></li>
-          <li><a href="#contact" class= "nav-button">Contact</a></li>
+        <ul class="list">
+          <li><a href="index.html" class="nav-button">Home</a></li>
+          <li><a href="about.html" class="nav-button">About</a></li>
+          <li><a href="#contact" class="nav-button">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -33,17 +33,19 @@
   <main>
     <!-- For the hero section -->
     <div>
-      <div>
+      <div class="container">
         <h1>About me</h1>
       </div>
     </div>
     <div>
-      <div>
+      <div class="container">
         <div>
-          <picture>
-            <source srcset="img/about/profile-tiny.png" media="(max-width:767px)">
-            <img src="img/about/profile-cropped.png" alt="Photo of Tom">
-          </picture>
+          <div class=avatar-photo>
+            <picture>
+              <source srcset="img/about/profile-tiny.png" media="(max-width:767px)">
+              <img src="img/about/profile-cropped.png" alt="Photo of Tom">
+            </picture>
+          </div>
           <div>
             <div div id="my-story">
               <h2>My Story</h2>
@@ -51,11 +53,11 @@
                 look at the products I worked with in great detail and inspired me to create functional and simple designs that support the product rather than get in the way of it. I now create intuitive and clean designs that serve the product and
                 ultimately the user.
               </p>
-              <a href="img/about/CV-Tom-Hopcroft.pdf" class="button"target=”_blank”>Download my CV</a>
+              <a href="img/about/CV-Tom-Hopcroft.pdf" class="button" target=”_blank”>Download my CV</a>
             </div>
             <div div id="skills-tools">
               <h2>Skills and Tools</h2>
-              <div>
+              <div div class="skills">
                 <div>
                   <h3>Relevant Skills</h3>
                   <ul>
@@ -87,24 +89,30 @@
   </main>
 
   <!-- For the footer  -->
-  <!-- For the footer  -->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Let’s Work Together</h2>
       <p>I am currently open to work opportunities and can start immediately, whether that be a full-time role or contract work. I specialise in mobile app design but I also do websites too and am always open to new challenges beyond that.
       <p>Services I can help you with:</p>
       <p>UI/UX design. Iconography. Branding. Logo design. Illustration.</p>
       <p>Get in touch to discuss your project and hear how I can help.</p>
-      <div><a href="mailto:tomcharliedesign@gmail.com?subject=Lets%20work%20together&body=Hi%20Tom," class="button contact">Email me</a></div>
-      <div><a href="https://www.instagram.com/tomcharliedesign/" class="button contact" target="_blank">Instagram</a></div>
-      <div><a href="https://dribbble.com/tomcharliedesign" class="button contact" target="_blank">Dribbble</a></div>
-      <div><a href="https://www.linkedin.com/in/tom-hopcroft-026530154/" class="button contact" target="_blank">LinkedIn</a></div>
+      <div class='row'><a href="mailto:tomcharliedesign@gmail.com?subject=Lets%20work%20together&body=Hi%20Tom," class="button contact">Email me</a></div>
+      <p>Or if you prefer, pick up the phone and give me a call: <a href=" tel:+447495030209">+44 7495 030 209</a></p>
+      <div class="link-to-social">
+        <a href="https://www.instagram.com/tomcharliedesign/">
+          <img src="img/instagram-seeklogo.com.svg" alt="Instagram Logo">
+        </a>
+        <a href="https://dribbble.com/tomcharliedesign">
+          <img src="img/dribbble-ball-mark-seeklogo.com.svg" alt="Dribbble Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/tom-hopcroft-026530154/">
+          <img src="img/linkedin.svg" alt="Linkedin Logo">
+        </a>
+
+      </div>
     </div>
-    <p>Or if you prefer, pick up the phone and give me a call: <a href=" tel:+447495030209">+44 7495 030 209</a></p>
     <p>Copyright Tom Hopcroft 2020</p>
     </div>
   </footer>
-  </footer>
-</body>
 
 </html>
