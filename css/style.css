@@ -21,6 +21,7 @@ body {
 h1 {
   font-size: 2em;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {
@@ -96,7 +97,7 @@ header {
   width: 100%;
   padding: 10px 0;
   position: fixed;
-  box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.24);
+  box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.1);
 }
 
 footer {
@@ -107,7 +108,7 @@ footer {
 }
 
 main {
-  padding-top: 140px;
+  padding-top: 250px;
 }
 
 .link-to-social>a {
@@ -177,7 +178,6 @@ nav {
   max-width: 100%;
 }
 
-
 #intro {
   background-color: #4FC19F;
   padding: 20px 0;
@@ -200,8 +200,80 @@ nav {
 }
 
 .greenback {
- background: linear-gradient(180deg, #ffffff 16%, rgba(255, 255, 255, 0) 16%), linear-gradient(180deg, #4FC19F 84%, #ffffff 84%);}
+  background: linear-gradient(180deg, #ffffff 16%, rgba(255, 255, 255, 0) 16%), linear-gradient(180deg, #4FC19F 84%, #ffffff 84%);
+}
 
-  .hifi-screens {
-    padding-top: 40px;
+.hifi-screens {
+  padding-top: 40px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
+
+  nav {
+    width: auto;
+    float: right margin-top: 4px;
+  }
+
+  body {
+    font-size: 19px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-md-7 {
+    width: 58.33%;
+    float: left;
+    padding: 15px;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+    float: left;
+    padding: 15px;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+/* ==============================
+  Floats all columns (with col-) so they appear on the same row
+  ================================= */
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+#projects h3 {
+  margin-top: 0;
+}
+
+/* ==============================
+Clears flow and prevents overlapping elements
+================================= */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
