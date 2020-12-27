@@ -32,54 +32,53 @@
 
   <main>
     <!-- For the hero section -->
-    <div>
+    <div class="section">
       <div class="container">
         <h1>About me</h1>
       </div>
     </div>
-    <div>
+    <div class="section">
       <div class="container">
-        <div>
-          <div class=avatar-photo>
-            <picture>
-              <source srcset="img/about/profile-tiny.png" media="(max-width:767px)">
-              <img src="img/about/profile-cropped.png" alt="Photo of Tom">
-            </picture>
+        <div class="avatar-photo">
+          <picture>
+            <source srcset="img/about/profile-tiny.png" media="(max-width:767px)">
+            <img src="img/about/profile-cropped.png" alt="Photo of Tom">
+          </picture>
+        </div>
+        <div class="row">
+          <div class="column col-lg-6 col-md-12" id="center-col">
+            <h2>My Story</h2>
+            <p>
+              I’m a UI designer with a background in account management in tech start-ups. I have experience solving user problems in fast paced environments and creating niche solutions for users in budget constrained environments. This led me to
+              look at the products I worked with in great detail and inspired me to create functional and simple designs that support the product rather than get in the way of it. I now create intuitive and clean designs that serve the product and
+              ultimately the user.
+            </p>
+            <a href="img/about/CV-Tom-Hopcroft.pdf" class="button" target="_blank">View my CV</a>
           </div>
-          <div>
-            <div>
-              <h2>My Story</h2>
-              <p>I’m a UI designer with a background in account management in tech start-ups. I have experience solving user problems in fast paced environments and creating niche solutions for users in budget constrained environments. This led me to
-                look at the products I worked with in great detail and inspired me to create functional and simple designs that support the product rather than get in the way of it. I now create intuitive and clean designs that serve the product and
-                ultimately the user.
-              </p>
-              <a href="img/about/CV-Tom-Hopcroft.pdf" class="button" target=”_blank”>Download my CV</a>
-            </div>
-            <div>
-              <h2>Skills and Tools</h2>
-              <div div class="skills">
-                <div class="col-md-6">
-                  <h3>Relevant Skills</h3>
-                  <ul>
-                    <li>Wire-framing</li>
-                    <li>Responsive web design</li>
-                    <li>HTML, CSS, Javascript</li>
-                    <li>Native app design</li>
-                    <li>Rapid prototyping</li>
-                    <li>User flows and diagrams</li>
-                    <li>User personas</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <h3>Tools I Use</h3>
-                  <ul>
-                    <li>Sketch</li>
-                    <li>InVision</li>
-                    <li>Affinity Designer</li>
-                    <li>Affinity Photo</li>
-                    <li>Adobe Creative Suite</li>
-                  </ul>
-                </div>
+          <div class="column col-lg-6 col-md-12">
+            <h2>Skills and Tools</h2>
+            <div class="row">
+              <div class="column col-md-6 col-lg-12">
+                <h3>Relevant Skills</h3>
+                <ul>
+                  <li>Wire-framing</li>
+                  <li>Responsive web design</li>
+                  <li>HTML, CSS, Javascript</li>
+                  <li>Native app design</li>
+                  <li>Rapid prototyping</li>
+                  <li>User flows and diagrams</li>
+                  <li>User personas</li>
+                </ul>
+              </div>
+              <div class="column col-md-6 col-lg-12">
+                <h3>Tools I Use</h3>
+                <ul>
+                  <li>Sketch</li>
+                  <li>InVision</li>
+                  <li>Affinity Designer</li>
+                  <li>Affinity Photo</li>
+                  <li>Adobe Creative Suite</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -89,7 +88,7 @@
   </main>
 
   <!-- For the footer  -->
-  <footer>
+  <footer id="contact">
     <div class="container">
       <h2>Let’s Work Together</h2>
       <p>I am currently open to work opportunities and can start immediately, whether that be a full-time role or contract work. I specialise in mobile app design but I also do websites too and am always open to new challenges beyond that.
