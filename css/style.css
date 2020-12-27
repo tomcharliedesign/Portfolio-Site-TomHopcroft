@@ -35,6 +35,14 @@ h3 {
   text-align: center;
 }
 
+#about-page h3 {
+  margin-top: 0;
+}
+
+#projects h3 {
+  margin-top: 0;
+}
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -49,14 +57,6 @@ a:visited {
   color: #ffffff;
 }
 
-a:hover,
-a:focus,
-a:active {
-  color: #730F48;
-  text-decoration: none;
-  /* No underline when hovering over a link */
-}
-
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -66,7 +66,8 @@ a:active {
   font-weight: 400;
   padding: 10px;
   border-radius: 4px;
-  transition: 0.5s opacity;
+  transition: 0.5s;
+  text-decoration: none
 }
 
 .button:hover,
@@ -82,11 +83,17 @@ a:active {
   text-transform: uppercase;
   border: 2px solid #000000;
   transition: 0.5s;
+  text-align: center;
+  width: 100%;
 }
 
 .button.contact:hover {
   background-color: #ACFFD7;
   color: #000000;
+}
+
+.button.visited {
+  color: #ffffff;
 }
 
 header {
@@ -108,7 +115,7 @@ footer {
 }
 
 main {
-  padding-top: 250px;
+  padding-top: 120px;
 }
 
 .link-to-social>a {
@@ -138,12 +145,25 @@ main {
 }
 
 .logo {
-  max-width: 150px;
+  max-width:400px;
+  display: inline-block;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section {
+  padding: 2em 0;
+}
+
+.hero span {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 nav>ul>li {
@@ -151,10 +171,11 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 16px;
+  padding: 14px;
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
+  text-decoration: none;
 }
 
 nav>ul>li>a:visited {
@@ -176,6 +197,7 @@ nav>ul>li>a:active {
 nav {
   display: inline-block;
   max-width: 100%;
+  margin-top: 10px;
 }
 
 #intro {
@@ -187,7 +209,7 @@ nav {
 
 .avatar-photo {
   max-width: 400px;
-  display: inline-block;
+  margin: 0 auto;
 }
 
 .intro {
@@ -208,9 +230,28 @@ nav {
 }
 
 /* ==============================
+Clears flow and prevents overlapping elements
+================================= */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  /* ==============================
+    Floats all columns (with col-) so they appear on the same row
+    ================================= */
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -218,7 +259,8 @@ Medium devices (640px and larger)
 
   nav {
     width: auto;
-    float: right margin-top: 4px;
+    float: right;
+    margin-top: 25px;
   }
 
   body {
@@ -228,52 +270,154 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .button.contact {
+    max-width: 100%;
+  }
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-md-7 {
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .col-lg-7 {
     width: 58.33%;
     float: left;
     padding: 15px;
   }
 
-  .col-md-5 {
+  .col-lg-5 {
     width: 41.66%;
     float: left;
     padding: 15px;
   }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+.column h3 {
+  text-align: left;
+}
+
+.button.contact {
+  max-width: 50%;
+}
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
 
-/* ==============================
-  Floats all columns (with col-) so they appear on the same row
-  ================================= */
-[class*="col-"] {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+.button.contact {
+  max-width: 50%;
+}
 }
 
-#about-page h3 {
-  margin-top: 0;
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#projects h3 {
-  margin-top: 0;
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
-/* ==============================
-Clears flow and prevents overlapping elements
-================================= */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.umbrella {
+  animation-duration: 1s;
+  animation-name: wiggle;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0deg);
+    left: 2000px;
+    top: 1000px;
+  }
+
+  to {
+    transform: rotateZ(30deg);
+    left: 2000px;
+    top: 1000px;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+footer a {
+  color: #730F48;
 }
