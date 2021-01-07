@@ -100,11 +100,45 @@ header {
   background-color: #ffffff;
   padding: 0px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   width: 100%;
   padding: 10px 0;
   position: fixed;
   box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.1);
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-top: 2px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 footer {
@@ -115,7 +149,7 @@ footer {
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 50px;
 }
 
 .link-to-social>a {
@@ -144,11 +178,6 @@ main {
   /* Centers text */
 }
 
-.logo {
-  max-width:200px;
-  display: inline-block;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -164,10 +193,6 @@ nav>ul {
   display: block;
   font-size: 0.8em;
   font-weight: 400;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -229,6 +254,12 @@ nav {
   padding-top: 40px;
 }
 
+.logo {
+  max-width: 200px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
 /* ==============================
 Clears flow and prevents overlapping elements
 ================================= */
@@ -238,13 +269,11 @@ Clears flow and prevents overlapping elements
   display: table;
 }
 
-
-
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
   /* ==============================
     Floats all columns (with col-) so they appear on the same row
     ================================= */
@@ -254,7 +283,6 @@ Medium devices (640px and larger)
     padding-right: 10px;
   }
 
-
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -263,7 +291,18 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 25px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav>ul>li {
+    display: inline-block;
   }
 
   body {
@@ -281,18 +320,17 @@ Medium devices (640px and larger)
   .button.contact {
     max-width: 100%;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .container {
     max-width: 1100px;
     margin: 0 auto;
   }
+
   .col-lg-7 {
     width: 58.33%;
     float: left;
@@ -313,31 +351,28 @@ Large devices (1024px or larger)
     width: 50%;
   }
 
-.column h3 {
-  text-align: left;
-}
+  .column h3 {
+    text-align: left;
+  }
 
-.button.contact {
-  max-width: 50%;
-}
+  .button.contact {
+    max-width: 50%;
+  }
 
-.logo {
-  max-width:400px;
-  display: inline-block;
-}
-
+  .logo {
+    max-width: 400px;
+    display: inline-block;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
-.button.contact {
-  max-width: 50%;
+  .button.contact {
+    max-width: 50%;
+  }
 }
-}
-
 
 .container {
   max-width: 1200px;
